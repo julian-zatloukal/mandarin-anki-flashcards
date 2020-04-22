@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mandarin-cards.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="frontbg">
+        <div id="image"> </div>
+        <div id="entry"></div>
+        <div id="description"></div>
+        <ul id="sentence">
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+  <script src="mandarin-cards-rebuild.js"></script>
+  <script src="pinyin-utils.js"></script>
+  <script>
+    var card = new Card(
+      CardTypes.ProductionBack,
+      "公共汽车",
+      "gōnggòng qìchē",
+      "to plan / to intend",
+      "我没有汽车，只能靠公共汽车。",
+      "wǒ méiyǒu qìchē, zhǐ néng kào gōnggòng qìchē.",
+      `<img src="image.jpg">`,
+      ``
+    );
+    card.initialize();
+  </script>
+</html>
